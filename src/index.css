@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1D564B;       /* Deep Forest Green/Teal - primary headers, main cards, hero buttons */
+  --primary-hover: #16433a;
+  --primary-dark: #123730;
+  --accent: #00A896;        /* Bright Mint/Teal - brand highlights, badges, primary CTA backgrounds */
+  --accent-hover: #009383;
+  --accent-light: #e6f6f4;
+  --background: #FBF9F6;    /* Off-white/Warm Cream - global body background */
+  --card: #FFFFFF;          /* Pure White - background for elevated container components and cards */
+  --secondary: #EEEAE5;     /* Warm Light Grey - background for alternating sections or inactive elements */
+  --muted: #E5E0DA;         /* Muted Soft Grey - for subtle borders, secondary labels, and text */
+  --border: #E1DCD6;        /* Outer Structural Borders - thin card lines and table grid lines */
+  --destructive: #D9383A;   /* Overdue Red - for negative alerts, overdue invoices, and "Absent" statuses */
+
+  --space-element: 2.5rem;
+  --space-block: 5rem;
+  --space-section: 8.5rem;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #FBF9F6;
+  color: #1D564B;
+}
+
+/* Feature card hover effect */
+.silsila-feature-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E1DCD6;
+  border-radius: 12px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.silsila-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(29, 86, 75, 0.08);
+  border-color: #00A896;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #E1DCD6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00A896;
+}
